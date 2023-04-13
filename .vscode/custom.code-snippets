@@ -1,0 +1,45 @@
+{
+  "Page Component": {
+    "scope": "typescriptreact",
+    "prefix": ["react pc", "rpc"],
+    "body": [
+      "import type { NextPage } from 'next'",
+      "",
+      "type Props = {}",
+      "",
+      "const $TM_FILENAME_BASE: NextPage<Props> = (props) => {",
+      "  return <div></div>",
+      "}",
+      "",
+      "export default $TM_FILENAME_BASE",
+      ""
+    ]
+  },
+  "Enum Template": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "enum",
+    "body": [
+      "const ${1:EnumName} = Object.freeze({",
+      "  $0",
+      "} as const)",
+      "",
+      "type $1 = typeof $1[keyof typeof $1]",
+      ""
+    ]
+  },
+  "reactfc": {
+    "scope": "typescriptreact",
+    "prefix": ["reactfc", "rfc"],
+    "body": [
+      "import { FC } from \"react\"",
+      "",
+      "type Props = {}",
+      "",
+      "export const $TM_FILENAME_BASE: FC<Props> = (props) => {",
+      "  return <div></div>",
+      "}",
+      ""
+    ],
+    "description": "Reactコンポーネントのテンプレート"
+  }
+}
