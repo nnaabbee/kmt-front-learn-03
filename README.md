@@ -25,3 +25,11 @@ yarn add --dev prettier
 touch .prettierrc.json
 touch .prettierignore
 ```
+
+### axios のインストール
+
+```bash
+yarn add axios
+```
+
+## Memo
